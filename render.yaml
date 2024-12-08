@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ollama
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+
+  - type: web
+    name: n8n
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
+
+  - type: web
+    name: flowise
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: starter
